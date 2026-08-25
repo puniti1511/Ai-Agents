@@ -6,6 +6,10 @@ This is a personal AI agent built on Claude that checks Fred Meyer's digital cou
 
 **MVP capabilities:** read the current grocery list · search Fred Meyer's live coupon catalog for matches · surface matches for the user to review · **clip confirmed coupons directly on the account** · report clipped items, expirations, and total savings in chat.
 
+## Impact
+
+This saves roughly 20–25 minutes before every Fred Meyer trip — the time it used to take to manually scroll the coupon catalog, cross-check it against a shopping list, and clip everything by hand. That time is now a single ad hoc request with a chat summary at the end.
+
 ## The problem
 
 Fred Meyer's digital coupon catalog typically holds 300+ live offers at any given time, spanning everything from weekly produce deals to household goods. Working out which of those match an actual shopping list, and clipping them before they expire, is the kind of task that's easy to skip under time pressure — and a meaningful share of the best offers ("Weekly Digital Deals") expire the same day they're first seen, so skipping the check has a real cost in missed savings.
