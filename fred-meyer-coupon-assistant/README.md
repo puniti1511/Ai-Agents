@@ -1,5 +1,7 @@
 # Fred Meyer Digital Coupon Assistant — Business Case & Scope
 
+> **What this is:** a documented AI-agent workflow that runs inside a conversation with Claude, using Claude's browser automation to drive a real, already-signed-in browser session. **What this isn't:** a standalone codebase — there's no script to `git clone` and run. This repo documents the scope, the process, and the judgment calls; the agent itself runs through Claude.
+
 ## Overview
 
 This is a personal AI agent built on Claude that checks Fred Meyer's digital coupons against a grocery list on request, clips the relevant ones with the user's confirmation, and reports back what was clipped and what it's worth. It exists to remove the manual work of scrolling through hundreds of live coupons every time a grocery run comes up.
@@ -37,6 +39,12 @@ Every run ends with a summary in this shape:
 | 4X Points on Purchases (Fri 8/28 only) | Points multiplier, excludes gift cards | Aug 28 | Clipped this run |
 
 **Total estimated savings this run:** sum of all newly clipped coupon values, called out at the end of the chat summary, alongside a separate note for any item expiring same-day so it doesn't get missed.
+
+### Example — real clipped coupons from an actual run
+
+![Clipped coupons on Fred Meyer's site after a run](assets/clipped-coupons-example.jpg)
+
+This is the account's actual "Clipped Coupons" view right after a run — not a mockup. The chat summary the agent returns is built from exactly this state.
 
 ## Design decisions
 
