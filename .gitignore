@@ -1,0 +1,13 @@
+# Never commit personal data sources or credentials for any agent project in this repo
+*grocery*
+*Grocery*
+*credential*
+*Credential*
+*password*
+*Password*
+.env
+.env.*
+*.xlsx
+*.xls
+*.csv
+secrets/
